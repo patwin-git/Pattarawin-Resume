@@ -56,14 +56,16 @@ All content lives in plain text inside **`index.html`** — there is no CMS or d
 
 ## Add or replace the profile photo
 
+The site currently ships with a tasteful **mock portrait** at `assets/profile.svg` (an illustrated executive silhouette in the brand palette). To swap in a real photo:
+
 1. Save your portrait as **`assets/profile.jpg`** (about 800 × 1000 px, 4:5 ratio works best).
-2. In `index.html`, inside the `.photo-frame` block, uncomment:
+2. In `index.html`, inside the `.photo-frame` block, change the image source from `assets/profile.svg` to `assets/profile.jpg`:
 
    ```html
    <img src="assets/profile.jpg" alt="Portrait of Pattarawin Teerachai" />
    ```
 
-3. The image fills the framed card automatically. If you leave it out, a clean `PT` placeholder is shown instead.
+3. The image fills the framed card automatically (it is cropped to fit, so a centred head-and-shoulders shot works best).
 
 ## Update the contact email
 
